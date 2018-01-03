@@ -70,7 +70,24 @@ class IndexPage extends React.Component {
     render() {
         return (
             <div>
-                <h1>To-Do App</h1>
+
+                <style jsx>{`
+					header {
+						background: #FBC13F;
+						margin: -10px -10px 0;
+						padding: 10px;
+					}
+					
+					header h1 {
+						margin: 0;
+						padding: 0;
+					}
+                `}</style>
+
+				<header>
+	                <h1>To-Do App</h1>
+				</header>
+
 				{ this.state.editMode ? this.renderEdit() : this.renderNormal() }
             </div>
         );
